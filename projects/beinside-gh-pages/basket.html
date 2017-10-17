@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>beinside</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top  header__top--white">
+      <div class="header__logo">
+        <a href="index.html">
+          <svg class="header__logo-svg">
+            <use xlink:href="img/symbol.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="user-bar">
+        <a href="#" class="user-bar__basket  user-bar__basket-icon  user-bar__basket-icon--black">0</a>
+        <div class="user-bar__drop-list-inner">
+          <a href="#" class="user-bar__active">$</a>
+          <div class="user-bar__drop-list">
+            <a href="#">&#8364;</a>
+          </div>
+        </div>
+        <div class="user-bar__drop-list-inner">
+          <a href="#" class="user-bar__active">Eng</a>
+          <div class="user-bar__drop-list">
+            <a href="#">Fr</a>
+            <a href="#">De</a>
+            <a href="#">Cn</a>
+          </div>
+        </div>
+        <button type="button" class="menu-toggle"></button>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="travel-mod.html">Travel mood</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="services.html">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="accommodation.html">Accommodation</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="activies.html">Extras</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="team.html">Team</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item"><a class="menu__link  menu__link--contacts" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contacts">
+      <button class="contacts__close" type="button">close</button>
+      <strong class="contacts__location">kiev, ukraine</strong>
+      <div class="contacts__item">
+        <strong>Phone</strong>
+        <a href="tel:+380443640913">+380443640913, +380507147373</a>
+      </div>
+      <div class="contacts__item">
+        <strong>Skype</strong>
+        <a href="skype:beinside.ukraine">beinside.ukraine</a>
+      </div>
+      <div class="contacts__item">
+        <strong>WhatsApp</strong>
+        <span>+38 050 714 73 73</span>
+      </div>
+      <div class="contacts__item">
+        <strong>Viber</strong>
+        <a href="tel:+380507147373">+38 050 714 73 73</a>
+      </div>
+      <div class="contacts__item">
+        <strong>email</strong>
+        <a href="mailto:office@beinside.ua">office@beinside.ua</a>
+      </div>
+    </div>
+  </header>
+  <form class="basket" method="get">
+    <div class="verify">
+      <span class="verify__title">My Travel List</span>
+      <ul class="verify__steps">
+        <li class="verify__step  verify__step--active">your activities</li>
+        <li class="verify__step  verify__step--success">accommodation</li>
+        <li class="verify__step">personal information</li>
+        <li class="verify__step">confirm</li>
+      </ul>
+    </div>
+    <div class="basket__info">
+      <div class="basket__info-inner">
+        <label class="basket__label" for="arrival">arrival</label>
+        <input class="basket__field field" id="arrival" name="arrival" type="date" value="dd.mm.yyyy" required>
+      </div>
+      <div class="basket__info-inner">
+        <label class="basket__label" for="departure">departure</label>
+        <input class="basket__field  field" id="departure" name="departure" type="date" value="dd.mm.yyyy" required>
+      </div>
+      <div class="basket__info-inner">
+        <label class="basket__label" for="number-of-people">number of people</label>
+        <select class="basket__field  field  field--select  field--indent" basket__field--quantity-people " name="number-of-people " id="number-of-people ">
+      <option value="1 ">1</option>
+      <option value="2 " selected>2</option>
+      <option value="3 ">3</option>
+      <option value="4 ">4</option>
+      <option value="5 ">5</option>
+      <option value="6 ">6</option>
+      <option value="7 ">7</option>
+      <option value="8 ">8</option>
+      <option value="9 ">9</option>
+      <option value="10 ">10</option>
+    </select>
+  </div>
+</div>
+<div class="program ">
+  <div class="program__info ">
+   <span>Program: <a href="# ">Be enriched</a></span>
+   <div class="program__selected "><span>You selected<b class="program__num "> 1 </b>activities</span></div>
+ </div>
+ <ol class="program__list ">
+   <li class="program__row ">
+     <div class="program__left-inner ">
+       <span class="program__order ">#1</span>
+       <span class="program__name ">Kiev Medieval</span>
+       <span class="program__number-guests ">price per 2 guests</span>
+     </div>
+     <span class="program__price ">300 &#8364;<input class="btn-checkbox__input " type="checkbox " id="check-1 " checked>
+       <label class="btn-checkbox btn-checkbox--small " for="check-1 "></label></span>
+     </li>
+
+     <li class="program__row ">
+       <div class="program__left-inner ">
+         <span class="program__order ">#2</span>
+         <span class="program__name ">Kiev Fashion</span>
+         <span class="program__number-guests ">price per 2 guests</span>
+       </div>
+       <span class="program__price ">300 &#8364;<input class="btn-checkbox__input " type="checkbox " id="check-2 " checked>
+         <label class="btn-checkbox btn-checkbox--small " for="check-2 "></label></span>
+       </li>
+
+       <li class="program__row ">
+        <div class="program__left-inner ">
+          <span class="program__order ">#3</span><span class="program__name ">Kiev Medieval</span>
+          <span class="program__number-guests ">price per 2 guests</span>
+        </div>
+        <span class="program__price ">300 &#8364;<input class="btn-checkbox__input " type="checkbox " id="check-3 " checked>
+          <label class="btn-checkbox btn-checkbox--small " for="check-3 "></label></span>
+        </li>
+      </ol>
+    </div>
+    <ul class="list-services ">
+      <li class="list-services__item ">
+       <span class="list-services__name ">Local guide support</span>
+       <span class="list-services__status ">included</span>
+     </li>
+     <li class="list-services__item ">
+       <span class="list-services__name ">Transfer</span>
+       <span class="list-services__status ">included</span>
+     </li>
+     <li class="list-services__item ">
+       <span class="list-services__name ">Medical insurance</span>
+       <span class="list-services__status ">included</span>
+     </li>
+     <li class="list-services__item ">
+       <span class="list-services__name ">Introductory tour to Kiev</span>
+       <span class="list-services__status ">included</span>
+     </li>
+   </ul>
+   <div class="sum sum--black-bg ">
+    <div class="sum__row ">
+     <span class="sum__option ">total cost</span>
+     <div class="sum__total js-sum__total ">196 &#8364;</div>
+   </div>
+   <div class="sum__row ">
+     <span class="sum__option ">pre-book 20% of your trip online</span>
+     <div class="sum__total js-sum__discont ">40 &#8364;</div>
+   </div>
+ </div>
+
+ <button type="button " class="btn btn--great btn--back ">back</button>
+ <button type="button " class="btn btn--great btn--next ">next</button>
+</form>
+
+<footer class="footer ">
+        <div class="footer__inner ">
+            <div class="footer__clear ">
+                <div class="footer__about ">
+                    <div class="footer__col ">
+                        <a class="footer__about-link " href="# ">Privacy Policy</a>
+                        <a class="footer__about-link " href="# ">Terms and conditions</a>
+                        <a class="footer__about-link " href="# ">FAQ Ukraine</a>
+                    </div>
+                    <div class="footer__col ">
+                        <a class="footer__about-link " href="# ">FAQ Beinside</a>
+                        <a class="footer__about-link " href="# ">Contact us</a>
+                    </div>
+                </div>
+                <ul class="footer__soc ">
+                    <li class="footer__soc-item ">
+                        <a href="# " class="footer__soc-link footer__soc-link--fb "></a>
+                    </li>
+                    <li class="footer__soc-item ">
+                        <a href="# " class="footer__soc-link footer__soc-link--insta "></a>
+                    </li>
+                    <li class="footer__soc-item ">
+                        <a href="# " class="footer__soc-link footer__soc-link--pdf "></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__payment ">
+                <a href=" ">Secure Payment</a>
+                <img src="img/Visa_logo.png " alt="visa " width="80 " height="30 ">
+                <img src="img/master_card_logo.png " alt="master card " width="50 " height="30 ">
+            </div>
+        </div>
+    </footer>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js "></script>
+  <script type="text/javascript" src="js/script.js "></script>
+</body>
+
+</html>

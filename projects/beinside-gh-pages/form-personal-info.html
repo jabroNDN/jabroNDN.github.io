@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>beinside</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top  header__top--white">
+      <div class="header__logo">
+        <a href="index.html">
+          <svg class="header__logo-svg">
+            <use xlink:href="img/symbol.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="user-bar">
+        <a href="#" class="user-bar__basket  user-bar__basket-icon  user-bar__basket-icon--black">0</a>
+        <div class="user-bar__drop-list-inner">
+          <a href="#" class="user-bar__active">$</a>
+          <div class="user-bar__drop-list">
+            <a href="#">&#8364;</a>
+          </div>
+        </div>
+        <div class="user-bar__drop-list-inner">
+          <a href="#" class="user-bar__active">Eng</a>
+          <div class="user-bar__drop-list">
+            <a href="#">Fr</a>
+            <a href="#">De</a>
+            <a href="#">Cn</a>
+          </div>
+        </div>
+        <button type="button" class="menu-toggle"></button>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="travel-mod.html">Travel mood</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="services.html">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="accommodation.html">Accommodation</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="activies.html">Extras</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="team.html">Team</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item"><a class="menu__link  menu__link--contacts" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contacts">
+      <button class="contacts__close" type="button">close</button>
+      <strong class="contacts__location">kiev, ukraine</strong>
+      <div class="contacts__item">
+        <strong>Phone</strong>
+        <a href="tel:+380443640913">+380443640913, +380507147373</a>
+      </div>
+      <div class="contacts__item">
+        <strong>Skype</strong>
+        <a href="skype:beinside.ukraine">beinside.ukraine</a>
+      </div>
+      <div class="contacts__item">
+        <strong>WhatsApp</strong>
+        <span>+38 050 714 73 73</span>
+      </div>
+      <div class="contacts__item">
+        <strong>Viber</strong>
+        <a href="tel:+380507147373">+38 050 714 73 73</a>
+      </div>
+      <div class="contacts__item">
+        <strong>email</strong>
+        <a href="mailto:office@beinside.ua">office@beinside.ua</a>
+      </div>
+    </div>
+  </header>
+  <form class="personal-info" method="get">
+    <div class="verify">
+      <span class="verify__title">My Travel List</span>
+      <ul class="verify__steps">
+        <li class="verify__step  verify__step--success">your activities</li>
+        <li class="verify__step  verify__step--success">accommodation</li>
+        <li class="verify__step  verify__step--active">personal information</li>
+        <li class="verify__step">confirm</li>
+      </ul>
+    </div>
+    <div class="personal-info__inner">
+      <strong class="personal-info__title">Information about you</strong>
+      <div class="personal-info__inner-input">
+        <label class="personal-info__label" for="first-name">first name <span class="personal-info__star">*</span></label>
+        <input class="personal-info__field  field  field--white" type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="personal-info__inner-input">
+        <label class="personal-info__label" for="first-name">last name <span class="personal-info__star">*</span></label>
+        <input class="personal-info__field field  field--white" type="text" id="last-name" name="last-name" required>
+      </div>
+      <div class="personal-info__inner-input">
+        <label class="personal-info__label" for="email">e-mail <span class="personal-info__star">*</span></label>
+        <input class="personal-info__field field  field--white" type="email" id="email" name="email" required>
+      </div>
+      <div class="personal-info__inner-input">
+        <label class="personal-info__label" for="phone">phone <span class="personal-info__star">*</span></label>
+        <input class="personal-info__field field  field--white" type="text" name="phone" id="phone" required>
+      </div>
+      <div class="personal-info__inner-input">
+        <label class="personal-info__label" for="arrival-time">arrival time</label>
+        <br>
+        <input class="personal-info__time-input  field  field--small" type="text" id="arrival-time" value="hh" name="arrival-time-hour">
+        <span class="personal-info__colon">:</span>
+        <input class="personal-info__time-input  field  field--small" type="text" name="arrival-time-minute" value="mm">
+      </div>
+      <div class="personal-info__inner-input  personal-info__inner-input--time">
+        <label class="personal-info__label" for="departure-time">departure time</label>
+        <br>
+        <input class="personal-info__time-input  field  field--small" type="text" id="departure-time" value="hh" name="departure-time-hour">
+        <span class="personal-info__colon">:</span>
+        <input class="personal-info__time-input  field  field--small" type="text" name="departure-time-minute" value="mm">
+      </div>
+      <div class="personal-info__inner-input">
+        <label class="personal-info__label" for="country">country</label>
+        <select class="personal-info__country field  field--select" name="country" id="country">
+          <option value="1">-</option>
+          <option value="2">England</option>
+          <option value="3">England</option>
+          <option value="4">England</option>
+        </select>
+      </div>
+      <div class="personal-info__textarea">
+        <label class="personal-info__label" for="message">do you have questions or special requests for this trip?</label>
+        <textarea class="personal-info__message" name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <a href="#" class="btn btn--great btn--back">previus</a>
+    <button type="submit" class="btn btn--great btn--next">next</button>
+  </form>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__clear">
+        <div class="footer__about">
+          <div class="footer__col">
+            <a class="footer__about-link" href="#">Privacy Policy</a>
+            <a class="footer__about-link" href="#">Terms and conditions</a>
+            <a class="footer__about-link" href="#">FAQ Ukraine</a>
+          </div>
+          <div class="footer__col">
+            <a class="footer__about-link" href="#">FAQ Beinside</a>
+            <a class="footer__about-link" href="#">Contact us</a>
+          </div>
+        </div>
+        <ul class="footer__soc">
+          <li class="footer__soc-item">
+            <a href="#" class="footer__soc-link  footer__soc-link--fb"></a>
+          </li>
+          <li class="footer__soc-item">
+            <a href="#" class="footer__soc-link  footer__soc-link--insta"></a>
+          </li>
+          <li class="footer__soc-item">
+            <a href="#" class="footer__soc-link  footer__soc-link--pdf"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__payment">
+        <a href="">Secure Payment</a>
+        <img src="img/Visa_logo.png" alt="visa" width="80" height="30">
+        <img src="img/master_card_logo.png" alt="master card" width="50" height="30">
+      </div>
+    </div>
+  </footer>
+  <script src="js/svg4everybody.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js "></script>
+  <script type="text/javascript " src="js/script.js "></script>
+</body>
+
+</html>

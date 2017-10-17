@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Goog Logistics</title>
+</head>
+<body>
+<header class="header">
+	<div class="header_inner">
+		<div class="header__logo">
+			<a href="index.html"><img src="assets/img/logo.jpg" width="113" height="75" alt="Good Logistics"/></a>
+		</div>
+		<div class="menu">
+			<button class="toggle-menu toggle-menu__htx">
+				<span>toggle menu</span>
+			</button>
+			<div class="menu__inner">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+					<li class="menu__item"><a href="#" class="menu__link  js-registry">Регистрация</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="contacts">
+	<div class="contacts__bg">
+		<div class="contacts__inner">
+			<ul class="contacts__list">
+				<li class="contacts__item">
+					<span class="icon"><img src="assets/img/sprite/phone.svg" width="43" height="43" alt="phone"/></span>
+					<div class="contacts__info">
+						<span class="contacts__title">Телефон</span><a href="tel:+380800300577" class="contacts__data">0 800
+						30-05-77</a>
+					</div>
+				</li>
+				<li class="contacts__item">
+					<span class="icon"><img src="assets/img/sprite/email.svg" width="43" height="43" alt="phone"/></span>
+					<div class="contacts__info">
+						<span class="contacts__title">Email</span><a href="mailto:sales@goodlogistics.com.ua"
+						                                             class="contacts__data">sales@goodlogistics.com.ua</a>
+					</div>
+				</li>
+				<li class="contacts__item">
+					<span class="icon"><img src="assets/img/sprite/skype.svg" width="43" height="43" alt="phone"/></span>
+					<div class="contacts__info">
+						<span class="contacts__title">Скайп</span><a href="skype:goodlogistics"
+						                                             class="contacts__data">goodlogistics</a>
+					</div>
+				</li>
+			</ul>
+			<div class="contacts__managers">
+				<div class="cityes">
+					<h3 class="cityes__title">Выберите город</h3>
+					<div class="cityes__list  cityes__list--contacts">
+						<div class="cityes__item  cityes__item--active">Киев</div>
+						<div class="cityes__item">Харьков</div>
+						<div class="cityes__item">Одесса</div>
+						<div class="cityes__item">Львов</div>
+						<div class="cityes__item">Днепр</div>
+					</div>
+					<button class="cityes__more"></button>
+				</div>
+
+				<div class="contacts__column">
+					<ul class="contacts__cityes-list">
+						<li class="contacts__select-cityes">Факс: +38 (048) 797 26 31</li>
+						<li class="contacts__select-cityes">БЦ «Шевченковский»</li>
+						<li class="contacts__select-cityes">ул. Маразлиевская, 1/20, оф 225, 226</li>
+						<li class="contacts__select-cityes">Тел. : +38 (048) 797 21 75/76</li>
+					</ul>
+					<div class="contacts__map" id="map">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="overlay">
+	<form class="form form--registy">
+		<span class="form__title">Регистрация</span>
+		<button class="form__close js-registry-close" type="button">Закрыть</button>
+		<div class="form__fields  form__fields--registry">
+			<label for="name-company" class="label">Название компании</label>
+			<input type="text" class="field" id="name-company" required>
+			<label for="all-name" class="label">Ф.И.О</label>
+			<input type="text" class="field" id="all-name" required>
+			<label for="email" class="label">Email</label>
+			<input type="email" class="field" id="email" required>
+			<label for="tel" class="label">Телефон</label>
+			<input type="tel" class="field"  id="tel" required>
+			<label for="answer" class="label">Ответ на вопрос: «Откуда вы о нас узнали»</label>
+			<input type="text" class="field" id="answer">
+			<div class="form__extra">
+				<input type="checkbox" id="remember">
+				<label for="remember" class="form__remember">Запомнить меня</label>
+				<a href="#" class="form__forgot-pas">Забыли пароль?</a>
+			</div>
+			<button class="btn btn--big">Зарегистрироваться</button>
+		</div>
+	</form>
+	<div class="registry__bottom-text">
+		<p class="registry__text">После регистрации Вы можете выбрать свой город, а так же менеджера, который
+			связавшись с
+			вами, расскажет
+			подробности по доставке груза.</p>
+	</div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCp1LQXSZ9CktbphketZ2inVvRMP7l6dHU"></script>
+</body>
+</html>
