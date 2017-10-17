@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>beinside</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top  header__top--white">
+      <div class="header__logo">
+        <a href="index.html">
+          <svg class="header__logo-svg">
+            <use xlink:href="img/symbol.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="user-bar">
+        <a href="#" class="user-bar__basket  user-bar__basket-icon  user-bar__basket-icon--black">0</a>
+        <div class="user-bar__drop-list-inner">
+          <a href="#" class="user-bar__active">$</a>
+          <div class="user-bar__drop-list">
+            <a href="#">&#8364;</a>
+          </div>
+        </div>
+        <div class="user-bar__drop-list-inner">
+          <a href="#" class="user-bar__active">Eng</a>
+          <div class="user-bar__drop-list">
+            <a href="#">Fr</a>
+            <a href="#">De</a>
+            <a href="#">Cn</a>
+          </div>
+        </div>
+        <button type="button" class="menu-toggle"></button>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="travel-mod.html">Travel mood</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="services.html">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="accommodation.html">Accommodation</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="activies.html">Extras</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="team.html">Team</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="menu__item"><a class="menu__link  menu__link--contacts" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="contacts">
+      <button class="contacts__close" type="button">close</button>
+      <strong class="contacts__location">kiev, ukraine</strong>
+      <div class="contacts__item">
+        <strong>Phone</strong>
+        <a href="tel:+380443640913">+380443640913, +380507147373</a>
+      </div>
+      <div class="contacts__item">
+        <strong>Skype</strong>
+        <a href="skype:beinside.ukraine">beinside.ukraine</a>
+      </div>
+      <div class="contacts__item">
+        <strong>WhatsApp</strong>
+        <span>+38 050 714 73 73</span>
+      </div>
+      <div class="contacts__item">
+        <strong>Viber</strong>
+        <a href="tel:+380507147373">+38 050 714 73 73</a>
+      </div>
+      <div class="contacts__item">
+        <strong>email</strong>
+        <a href="mailto:office@beinside.ua">office@beinside.ua</a>
+      </div>
+    </div>
+  </header>
+  <form class="houseroom" method="get">
+    <div class="verify">
+      <span class="verify__title">My Travel List</span>
+      <ul class="verify__steps">
+        <li class="verify__step  verify__step--success">your activities</li>
+        <li class="verify__step  verify__step--active">accommodation</li>
+        <li class="verify__step">personal information</li>
+        <li class="verify__step">confirm</li>
+      </ul>
+    </div>
+    <span class="houseroom__page-title">Choose accommodation</span>
+    <div class="houseroom__item">
+      <div class="houseroom__photo">
+        <img src="img/houseroom_item_room_1.jpg" alt="Be comfort" width="768" height="989">
+      </div>
+      <div class="houseroom__right-inner">
+        <div class="housereoom__desc  housereoom__desc--bottom-margin">
+          <span class="houseroom__title">Be comfort<span class="houseroom__icon  houseroom__icon--comfort"></span></span>
+          <p>Have a comfortable stay in a fashionable hotel of this category. Central location, elegant and classic design will make your journey pleasant. Soundproofing rooms are equipped with necessary furniture and equipment, including WI-FI and satellite TV. Private bathroom has a shower in each unit, towels, complimentary toiletries and a hair dryer. Rooms are air-conditioned and have a safety deposit box. There is a fitness center and a business meeting room in a hotel. Breakfast included. The restaurant and the reception are open 24/7.Specify your preference for the room type and enjoy your comfort stay in Kiev.</p>
+          <strong class="houseroom__quantity">Double Room (2 guests) - 100 &#8364;</strong>
+        </div>
+        <div class="houseroom__number-of-rooms">
+          <div class="houseroom__input-inner">
+            <input class="houseroom__input  field" type="text" name="comfort-one" value="double" disabled>
+            <select class="houseroom__input  houseroom__input--guests  field  field--select" name="comfort-select-one">
+              <option value="guest-0">0</option>
+              <option value="guest-1">1</option>
+              <option value="guest-2">2</option>
+              <option value="guest-3">3</option>
+              <option value="guest-4">4</option>
+              <option value="guest-5">5</option>
+              <option value="guest-6">6</option>
+              <option value="guest-7">7</option>
+              <option value="guest-8">8</option>
+              <option value="guest-9">9</option>
+              <option value="guest-10">10</option>
+            </select>
+          </div>
+          <div class="houseroom__input-inner">
+            <input class="houseroom__input  field" name="comfort-two" type="text" value="twin" disabled>
+            <select class="houseroom__input  houseroom__input--guests field  field--select" name="comfort-select-two">
+              <option value="guest-0">0</option>
+              <option value="guest-1">1</option>
+              <option value="guest-2">2</option>
+              <option value="guest-3">3</option>
+              <option value="guest-4">4</option>
+              <option value="guest-5">5</option>
+              <option value="guest-6">6</option>
+              <option value="guest-7">7</option>
+              <option value="guest-8">8</option>
+              <option value="guest-9">9</option>
+              <option value="guest-10">10</option>
+            </select>
+          </div>
+          <div class="houseroom__input-inner">
+            <input class="houseroom__input  field" name="comfort-three" type="text" value="triple" disabled>
+            <select class="houseroom__input  houseroom__input--guests  field  field--select" name="comfort-select-three">
+              <option value="guest-0">0</option>
+              <option value="guest-1">1</option>
+              <option value="guest-2">2</option>
+              <option value="guest-3">3</option>
+              <option value="guest-4">4</option>
+              <option value="guest-5">5</option>
+              <option value="guest-6">6</option>
+              <option value="guest-7">7</option>
+              <option value="guest-8">8</option>
+              <option value="guest-9">9</option>
+              <option value="guest-10">10</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="houseroom__item">
+      <div class="houseroom__photo">
+        <img src="img/houseroom_item_room_2.jpg" alt="Be cozy" width="768" height="983">
+      </div>
+      <div class="houseroom__right-inner">
+        <div class="housereoom__desc  housereoom__desc--bottom-margin">
+          <span class="houseroom__title">Be cozy<span class="houseroom__icon  houseroom__icon--cozy"></span></span>
+          <p>Attractive and cozy hotels with a central location have been carefully selected to assure your pleasant stay in Kiev. Close to main attractions, fashionable restaurants and bars. Comfortable and spacious soundproofing air-conditioned hotel rooms have all the necessary equipment and furniture. Each private bathroom has a shower in its unit, towels, complimentary toiletries and a hair dryer. WI-FI in each room. Breakfast included. Specify your preference for the type of room and enjoy your cozy stay in Kiev.</p>
+          <strong class="houseroom__quantity">Double Room (2 guests) - 70 &#8364;</strong>
+        </div>
+        <div class="houseroom__number-of-rooms">
+          <div class="houseroom__input-inner">
+            <input class="houseroom__input  field" type="text" name="cozy-one" value="doubled" disabled>
+            <select class="houseroom__input  houseroom__input--guests field  field--select" name="cozy-select-one">
+              <option value="guest-0">0</option>
+              <option value="guest-1">1</option>
+              <option value="guest-2">2</option>
+              <option value="guest-3">3</option>
+              <option value="guest-4">4</option>
+              <option value="guest-5">5</option>
+              <option value="guest-6">6</option>
+              <option value="guest-7">7</option>
+              <option value="guest-8">8</option>
+              <option value="guest-9">9</option>
+              <option value="guest-10">10</option>
+            </select>
+          </div>
+          <div class="houseroom__input-inner">
+            <input class="houseroom__input  field" name="cozy-two" type="text" value="twin" disabled>
+            <select class="houseroom__input  houseroom__input--guests  field  field--select name=" cozy-select-two ">
+                                    <option value="guest-0 ">0</option>
+                                    <option value="guest-1 ">1</option>
+                                    <option value="guest-2 ">2</option>
+                                    <option value="guest-3 ">3</option>
+                                    <option value="guest-4 ">4</option>
+                                    <option value="guest-5 ">5</option>
+                                    <option value="guest-6 ">6</option>
+                                    <option value="guest-7 ">7</option>
+                                    <option value="guest-8 ">8</option>
+                                    <option value="guest-9 ">9</option>
+                                    <option value="guest-10 ">10</option>
+                                </select>
+                            </div>
+                            <div class="houseroom__input-inner ">
+                             <input class="houseroom__input field " name="cozy-three " type="text " value="triple " disabled>
+                             <select class="houseroom__input houseroom__input--guests field field--select " name="cozy-select-three ">
+                                <option value="guest-0 ">0</option>
+                                <option value="guest-1 ">1</option>
+                                <option value="guest-2 ">2</option>
+                                <option value="guest-3 ">3</option>
+                                <option value="guest-4 ">4</option>
+                                <option value="guest-5 ">5</option>
+                                <option value="guest-6 ">6</option>
+                                <option value="guest-7 ">7</option>
+                                <option value="guest-8 ">8</option>
+                                <option value="guest-9 ">9</option>
+                                <option value="guest-10 ">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="houseroom__item ">
+                <div class="houseroom__photo ">
+                   <img src="img/houseroom_item_room_3.jpg " alt="bathroom " width="768 " height="932 ">
+               </div>
+               <div class="houseroom__right-inner ">
+                   <div class="housereoom__desc housereoom__desc--bottom-margin ">
+                      <span class="houseroom__title ">Be home<span class="houseroom__icon houseroom__icon--home "></span></span>
+                      <p>Feel like home by choosing an apartment for your stay in Kiev. Each has a central location and is situated around 10 minutes’ walk from the main Khreschatyk street, close to trendy restaurants and bars. Convenient and modern one – two - three bedroom apartments have one double bed in each room. They are equipped with necessary modern furnishings, have a kitchenette with a refrigerator, microwave, stovetop and other kitchenware. There is a bathroom with a shower or bath and a hair dryer. Air-condition and free WI-Fi is provided in every apartment.</p>
+                      <strong class="houseroom__quantity ">Entire apartment (2 guests) - 40 &#8364;</strong>
+                  </div>
+                  <div class="houseroom__input-inner ">
+                      <input class="houseroom__input field " type="text " name="home-one " value="double " disabled>
+                      <select  class="houseroom__input houseroom__input--guests field field--select " name="home-select-one ">
+                         <option value="guest-0 ">0</option>
+                         <option value="guest-1 ">1</option>
+                         <option value="guest-2 ">2</option>
+                         <option value="guest-3 ">3</option>
+                         <option value="guest-4 ">4</option>
+                         <option value="guest-5 ">5</option>
+                         <option value="guest-6 ">6</option>
+                         <option value="guest-7 ">7</option>
+                         <option value="guest-8 ">8</option>
+                         <option value="guest-9 ">9</option>
+                         <option value="guest-10 ">10</option>
+                     </select>
+                 </div>
+                 <div class="houseroom__input-inner ">
+                  <input class="houseroom__input field " name="home-two " type="text " value="twin " disabled>
+                  <select  class="houseroom__input houseroom__input--guests field field--select " name="home-select-two ">
+                     <option value="guest-0 ">0</option>
+                     <option value="guest-1 ">1</option>
+                     <option value="guest-2 ">2</option>
+                     <option value="guest-3 ">3</option>
+                     <option value="guest-4 ">4</option>
+                     <option value="guest-5 ">5</option>
+                     <option value="guest-6 ">6</option>
+                     <option value="guest-7 ">7</option>
+                     <option value="guest-8 ">8</option>
+                     <option value="guest-9 ">9</option>
+                     <option value="guest-10 ">10</option>
+                 </select>
+             </div>
+             <div class="houseroom__input-inner ">
+              <input class="houseroom__input field " name="home-three " type="text " value="triple " disabled>
+              <select class="houseroom__input houseroom__input--guests field field--select " name="home-select-three ">
+                 <option value="guest-0 ">0</option>
+                 <option value="guest-1 ">1</option>
+                 <option value="guest-2 ">2</option>
+                 <option value="guest-3 ">3</option>
+                 <option value="guest-4 ">4</option>
+                 <option value="guest-5 ">5</option>
+                 <option value="guest-6 ">6</option>
+                 <option value="guest-7 ">7</option>
+                 <option value="guest-8 ">8</option>
+                 <option value="guest-9 ">9</option>
+                 <option value="guest-10 ">10</option>
+             </select>
+         </div>
+     </div>
+ </div>
+</div>
+<div class="houseroom__skip-step ">
+ <div class="houseroom__skip-bg ">
+    <span class="houseroom__skip-text ">I already have accommodation</span>
+</div>
+<a class="houseroom__skip-link " href="# ">Skip this Step</a>
+</div>
+<div class="sum sum--black-bg ">
+ <div class="sum__row ">
+    <span class="sum__option ">total cost</span>
+    <div class="sum__total js-sum__total ">196 &#8364;</div>
+</div>
+<div class="sum__row ">
+    <span class="sum__option ">pre-book 20% of your trip online</span>
+    <div class="sum__total js-sum__discont ">40 &#8364;</div>
+</div>
+</div>
+<a href="# " class="btn btn--great btn--back ">previus</a>
+<button type="submit " class="btn btn--great btn--next ">next</button>
+</form>
+
+
+
+<footer class="footer ">
+    <div class="footer__inner ">
+        <div class="footer__clear ">
+            <div class="footer__about ">
+                <div class="footer__col ">
+                    <a class="footer__about-link " href="# ">Privacy Policy</a>
+                    <a class="footer__about-link " href="# ">Terms and conditions</a>
+                    <a class="footer__about-link " href="# ">FAQ Ukraine</a>
+                </div>
+                <div class="footer__col ">
+                    <a class="footer__about-link " href="# ">FAQ Beinside</a>
+                    <a class="footer__about-link " href="# ">Contact us</a>
+                </div>
+            </div>
+            <ul class="footer__soc ">
+                <li class="footer__soc-item ">
+                    <a href="# " class="footer__soc-link footer__soc-link--fb "></a>
+                </li>
+                <li class="footer__soc-item ">
+                    <a href="# " class="footer__soc-link footer__soc-link--insta "></a>
+                </li>
+                <li class="footer__soc-item ">
+                    <a href="# " class="footer__soc-link footer__soc-link--pdf "></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__payment ">
+            <a href=" ">Secure Payment</a>
+            <img src="img/Visa_logo.png " alt="visa " width="80 " height="30 ">
+            <img src="img/master_card_logo.png " alt="master card " width="50 " height="30 ">
+        </div>
+    </div>
+</footer>
+<script src="js/svg4everybody.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js "></script>
+  <script type="text/javascript " src="js/script.js "></script>
+</body>
+
+</html>

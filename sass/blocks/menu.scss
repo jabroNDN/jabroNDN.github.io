@@ -1,0 +1,39 @@
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu__item {
+  margin-right: 10px;
+}
+.menu__link {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  background-color: #eae6e6;
+  border-radius: 2px;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  &--active {
+    border-bottom: 2px solid $black;
+    &:hover {
+      background-color: #fff;
+      border-bottom: 2px solid $blue;
+    }
+  }
+  &:hover {
+      background-color: #fff;
+    }
+}
+@media #{$tablet} {
+  .menu__list {
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

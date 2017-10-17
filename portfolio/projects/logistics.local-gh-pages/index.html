@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Good Logistics</title>
+</head>
+
+<body>
+<header class="header">
+	<div class="header_inner">
+		<div class="header__logo"><img src="assets/img/logo.jpg" width="113" height="75" alt="Good Logistics"/></div>
+		<nav class="menu">
+			<button class="toggle-menu toggle-menu__htx">
+				<span>toggle menu</span>
+			</button>
+			<div class="menu__inner">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+					<li class="menu__item"><a href="#" class="menu__link js-registry">Регистрация</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<div class="map">
+	<div class="map__inner">
+		<form class="form">
+			<span class="form__title">Форма расчета</span>
+			<div class="form__fields">
+				<label for="whence" class="label">Откуда</label>
+				<input type="text" class="field" id="whence" value="Одесса" required>
+				<label for="where" class="label">Куда</label>
+				<input type="text" class="field" id="where" required>
+				<label for="date" class="label">Дата</label>
+				<input type="text" class="field js-field-date" id="date" required>
+				<div class="form__field-wrapper">
+					<label for="amount" class="label">Объем, м<sup>3</sup></label>
+					<input type="number" class="field" id="amount" required>
+				</div>
+				<div class="form__field-wrapper">
+					<label for="weight" class="label">Вес, кг</label>
+					<input type="number" class="field" id="weight" required>
+				</div>
+			</div>
+			<div class="form__bottom">
+				<strong class="form__total">Total: $ 342</strong>
+				<button class="btn btn--big" type="submit">Рассчитать</button>
+			</div>
+		</form>
+	</div>
+
+</div>
+<div class="extra-services">
+	<div class="extra-services__inner">
+
+		<h3>Дополнительные услуги</h3>
+		<form class="extra-services__form">
+			<div class="extra-services__checkbox-inner">
+				<input type="checkbox" class="extra-services__checkbox" id="insurance">
+				<label for="insurance" class="extra-services__label">Страхование</label>
+			</div>
+			<div class="extra-services__checkbox-inner">
+				<input type="checkbox" class="extra-services__checkbox" id="delivery">
+				<label for="delivery" class="extra-services__label">Автодоставка по Украине</label>
+			</div>
+			<div class="extra-services__checkbox-inner">
+				<input type="checkbox" class="extra-services__checkbox" checked id="import">
+				<label for="import" class="extra-services__label">Таможенное оформление (импорт)</label>
+			</div>
+			<div class="extra-services__checkbox-inner">
+				<input type="checkbox" class="extra-services__checkbox" checked id="export">
+				<label for="export" class="extra-services__label">ТО (Экспорт)
+				</label>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="managers">
+	<h2>Выберите менеджера</h2>
+	<div class="managers__inner  box">
+		<div class="cityes">
+			<h3 class="cityes__title">Выберите город</h3>
+			<div class="cityes__list">
+				<button type="button" class="cityes__item  cityes__item--active ">Киев</button>
+				<button type="button" class="cityes__item">Харьков</button>
+				<button type="button" class="cityes__item">Одесса</button>
+				<button type="button" class="cityes__item">Львов</button>
+				<button type="button" class="cityes__item">Днепр</button>
+			</div>
+			<button class="cityes__more"></button>
+		</div>
+		<div class="managers__list box__column">
+			<h3>Выберите менеджера</h3>
+			<div class="managers__inner-list">
+				<div class="managers__item">
+					<div class="managers__photo">
+						<img src="assets/img/user-photo-1.jpg" width="48" height="47" alt="Nellie Tran"/>
+					</div>
+					<div class="managers__info">
+						<div class="managers__name">
+							<span class="contacts__last-name">Nellie Tran</span>
+							<span class="manager__city-live">Киев</span>
+						</div>
+						<div class="managers__contacts">
+							<a href="email:larkin@yahoo.com" class="managers__email">luz.larkin@yahoo.com</a>
+							<a href="tel:+380982384762" class="managers__tel">098 2384762</a>
+						</div>
+						<button type="button" class="btn managers__get-through">Связаться</button>
+					</div>
+				</div>
+				<div class="managers__item">
+					<div class="managers__photo">
+						<img src="assets/img/user-photo-2.jpg" width="48" height="47" alt="Erik Doyle"/>
+					</div>
+					<div class="managers__info">
+						<div class="managers__name">
+							<span class="contacts__last-name">Erik Doyle</span>
+							<span class="manager__city-live">Киев</span>
+						</div>
+						<div class="managers__contacts">
+							<a href="email:larkin@yahoo.com" class="managers__email">luz.larkin@yahoo.com</a>
+							<a href="tel:+380991293869" class="managers__tel">099 1293869</a>
+						</div>
+						<button type="button" class="btn managers__get-through">Связаться</button>
+					</div>
+				</div>
+				<div class="managers__item">
+					<div class="managers__photo">
+						<img src="assets/img/user-photo-3.jpg" width="48" height="47" alt="Annie Campbell"/>
+					</div>
+					<div class="managers__info">
+						<div class="managers__name">
+							<span class="contacts__last-name">Annie Campbell</span>
+							<span class="manager__city-live">Киев</span>
+						</div>
+						<div class="managers__contacts">
+							<a href="email:larkin@yahoo.com" class="managers__email">luz.larkin@yahoo.com</a>
+							<a href="tel:+380989823642" class="managers__tel">098 9823642</a>
+						</div>
+						<button type="button" class="btn managers__get-through">Связаться</button>
+					</div>
+				</div>
+				<div class="managers__item">
+					<div class="managers__photo">
+						<img src="assets/img/user-photo-4.jpg" width="48" height="47" alt="Martha Goodwin"/>
+					</div>
+					<div class="managers__info">
+						<div class="managers__name">
+							<span class="contacts__last-name">Martha Goodwin</span>
+							<span class="manager__city-live">Киев</span>
+						</div>
+						<div class="managers__contacts">
+							<a href="email:larkin@yahoo.com" class="managers__email">luz.larkin@yahoo.com</a>
+							<a href="tel:+380952475624" class="managers__tel">095 2475624</a>
+						</div>
+						<button type="button" class="btn managers__get-through">Связаться</button>
+					</div>
+				</div>
+				<div class="managers__item">
+					<div class="managers__photo">
+						<img src="assets/img/user-photo-5.jpg" width="48" height="47" alt="Nell Robbins"/>
+					</div>
+					<div class="managers__info">
+						<div class="managers__name">
+							<span class="contacts__last-name">Nell Robbins</span>
+							<span class="manager__city-live">Киев</span>
+						</div>
+						<div class="managers__contacts">
+							<a href="email:larkin@yahoo.com" class="managers__email">luz.larkin@yahoo.com</a>
+							<a href="tel:+380982384762" class="managers__tel">098 2384524</a>
+						</div>
+						<button type="button" class="btn managers__get-through">Связаться</button>
+					</div>
+				</div>
+				<div class="managers__item">
+					<div class="managers__photo">
+						<img src="assets/img/user-photo-5.jpg" width="48" height="47" alt="Nell Robbins"/>
+					</div>
+					<div class="managers__info">
+						<div class="managers__name">
+							<span class="contacts__last-name">Nell Robbins</span>
+							<span class="manager__city-live">Киев</span>
+						</div>
+						<div class="managers__contacts">
+							<a href="email:larkin@yahoo.com" class="managers__email">luz.larkin@yahoo.com</a>
+							<a href="tel:+380982384762" class="managers__tel">098 2384524</a>
+						</div>
+						<button type="button" class="btn managers__get-through">Связаться</button>
+					</div>
+				</div>
+				<div class="managers__item">
+					<div class="managers__photo">
+						<img src="assets/img/user-photo-4.jpg" width="48" height="47" alt="Martha Goodwin"/>
+					</div>
+					<div class="managers__info">
+						<div class="managers__name">
+							<span class="contacts__last-name">Martha Goodwin</span>
+							<span class="manager__city-live">Киев</span>
+						</div>
+						<div class="managers__contacts">
+							<a href="email:larkin@yahoo.com" class="managers__email">luz.larkin@yahoo.com</a>
+							<a href="tel:+380952475624" class="managers__tel">095 2475624</a>
+						</div>
+						<button type="button" class="btn managers__get-through">Связаться</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="overlay">
+	<form class="form form--registy">
+		<span class="form__title">Регистрация</span>
+		<button class="form__close js-registry-close" type="button">Закрыть</button>
+		<div class="form__fields  form__fields--registry">
+			<label for="name-company" class="label">Название компании</label>
+			<input type="text" class="field" id="name-company" required>
+			<label for="all-name" class="label">Ф.И.О</label>
+			<input type="text" class="field" id="all-name" required>
+			<label for="email" class="label">Email</label>
+			<input type="email" class="field" id="email" required>
+			<label for="tel" class="label">Телефон</label>
+			<input type="tel" class="field" pattern="[389][0-9]{9}" id="tel" required>
+			<label for="answer" class="label">Ответ на вопрос: «Откуда вы о нас узнали»</label>
+			<input type="text" class="field" id="answer">
+			<div class="form__extra">
+				<input type="checkbox" id="remember">
+				<label for="remember" class="form__remember">Запомнить меня</label>
+				<a href="#" class="form__forgot-pas">Забыли пароль?</a>
+			</div>
+			<button class="btn btn--big">Зарегистрироваться</button>
+		</div>
+	</form>
+	<div class="registry__bottom-text">
+		<p class="registry__text">После регистрации Вы можете выбрать свой город, а так же менеджера, который
+			связавшись с
+			вами, расскажет
+			подробности по доставке груза.</p>
+	</div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/plugins/jquery.mCustomScrollbar.min.js"></script>
+<script src="assets/js/plugins/flatpickr.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>
